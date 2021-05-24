@@ -1,0 +1,12 @@
+type Query {
+    getAllHumans: [Human!]
+    getAllDroids: [Droid!]
+}
+
+type Droid {
+    name: String!
+}
+
+type Human {
+    name: String!
+}

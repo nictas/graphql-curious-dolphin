@@ -1,0 +1,24 @@
+server:
+  port: 8787
+
+graphql:
+  servlet:
+    exception-handlers-enabled: true
+
+solace:
+  java:
+    # Workaround for macOS. See https://developer.apple.com/forums/thread/671197
+    host: localhost:55554
+
+spring:
+  application:
+    name: curious-dolphin
+
+  cloud:
+    stream:
+      default:
+        group: default
+        consumer:
+          concurrency: 3
+
+solace-vpn: default
